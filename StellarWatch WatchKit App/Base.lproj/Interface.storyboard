@@ -1,14 +1,46 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AgC-eL-Hgc">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="12120" systemVersion="16D30" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AgC-eL-Hgc">
+    <device id="watch38" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="11055"/>
+        <deployment identifier="watchOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="12029"/>
     </dependencies>
     <scenes>
-        <!--Interface Controller-->
+        <!--bg-->
         <scene sceneID="aou-V4-d1y">
             <objects>
-                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModuleProvider="target"/>
+                <controller backgroundImage="bg" id="AgC-eL-Hgc" customClass="InterfaceController" customModule="StellarWatch_WatchKit_App" customModuleProvider="target">
+                    <items>
+                        <imageView width="60" height="60" alignment="center" image="stellar" id="iZf-uk-Wxp"/>
+                        <group width="1" height="38" alignment="left" id="sId-5m-nhl">
+                            <items>
+                                <imageView width="20" height="16" alignment="left" verticalAlignment="center" id="fwh-J3-2Me"/>
+                                <label height="25" alignment="center" verticalAlignment="center" text="LOADING" textAlignment="center" id="62j-To-x8p">
+                                    <fontDescription key="font" style="UICTFontTextStyleBody"/>
+                                </label>
+                                <imageView width="20" height="16" alignment="right" verticalAlignment="center" id="0HI-uw-ogA"/>
+                            </items>
+                        </group>
+                        <label width="1" alignment="center" text="VOL: 0 M" textAlignment="center" id="6dZ-8l-VM2">
+                            <color key="textColor" red="0.50196081400000003" green="0.50196081400000003" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                            <fontDescription key="font" style="UICTFontTextStyleFootnote"/>
+                        </label>
+                        <label width="1" alignment="center" text="CAP: 0 M" textAlignment="center" id="McR-hQ-ktG">
+                            <color key="textColor" red="0.50196081400000003" green="0.50196081400000003" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                            <fontDescription key="font" style="UICTFontTextStyleFootnote"/>
+                        </label>
+                    </items>
+                    <connections>
+                        <outlet property="imageLeft" destination="fwh-J3-2Me" id="Hdm-IX-Hxf"/>
+                        <outlet property="imageRight" destination="0HI-uw-ogA" id="rTd-OW-y0V"/>
+                        <outlet property="textMarket" destination="McR-hQ-ktG" id="7Ws-Ua-dLs"/>
+                        <outlet property="textPrice" destination="62j-To-x8p" id="O2V-bd-U1t"/>
+                        <outlet property="textVolume" destination="6dZ-8l-VM2" id="dnl-MO-s8I"/>
+                    </connections>
+                </controller>
             </objects>
             <point key="canvasLocation" x="220" y="345"/>
         </scene>
@@ -31,7 +63,7 @@
         <!--Notification Controller-->
         <scene sceneID="ZPc-GJ-vnh">
             <objects>
-                <controller id="4sK-HA-Art" customClass="NotificationController" customModuleProvider="target"/>
+                <controller id="4sK-HA-Art" customClass="NotificationController" customModule="StellarWatch_WatchKit_App" customModuleProvider="target"/>
             </objects>
             <point key="canvasLocation" x="468" y="643"/>
         </scene>

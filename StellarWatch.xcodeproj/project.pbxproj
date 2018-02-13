@@ -20,6 +20,8 @@
 		F4E6269920323BC700CA78CD /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4E6269820323BC700CA78CD /* ExtensionDelegate.swift */; };
 		F4E6269B20323BC700CA78CD /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4E6269A20323BC700CA78CD /* NotificationController.swift */; };
 		F4E6269D20323BC700CA78CD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F4E6269C20323BC700CA78CD /* Assets.xcassets */; };
+		F4E626AE20323E7A00CA78CD /* Ticker.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4E626AD20323E7A00CA78CD /* Ticker.swift */; };
+		F4E626AF20323E7A00CA78CD /* Ticker.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4E626AD20323E7A00CA78CD /* Ticker.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,6 +67,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		F4C3E5FD20327A360047110B /* Readme.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = Readme.md; sourceTree = "<group>"; };
 		F4E6266E20323BC600CA78CD /* StellarWatch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StellarWatch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F4E6267120323BC600CA78CD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F4E6267320323BC600CA78CD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -83,6 +86,8 @@
 		F4E6269A20323BC700CA78CD /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
 		F4E6269C20323BC700CA78CD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F4E6269E20323BC700CA78CD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F4E626AC20323E7900CA78CD /* StellarWatch WatchKit App-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "StellarWatch WatchKit App-Bridging-Header.h"; sourceTree = "<group>"; };
+		F4E626AD20323E7A00CA78CD /* Ticker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Ticker.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +111,7 @@
 		F4E6266520323BC600CA78CD = {
 			isa = PBXGroup;
 			children = (
+				F4C3E5FD20327A360047110B /* Readme.md */,
 				F4E6267020323BC600CA78CD /* StellarWatch */,
 				F4E6268420323BC600CA78CD /* StellarWatch WatchKit App */,
 				F4E6269320323BC700CA78CD /* StellarWatch WatchKit Extension */,
@@ -129,8 +135,8 @@
 				F4E6267120323BC600CA78CD /* AppDelegate.swift */,
 				F4E6267320323BC600CA78CD /* ViewController.swift */,
 				F4E6267520323BC600CA78CD /* Main.storyboard */,
-				F4E6267820323BC600CA78CD /* Assets.xcassets */,
 				F4E6267A20323BC600CA78CD /* LaunchScreen.storyboard */,
+				F4E6267820323BC600CA78CD /* Assets.xcassets */,
 				F4E6267D20323BC600CA78CD /* Info.plist */,
 			);
 			path = StellarWatch;
@@ -149,12 +155,14 @@
 		F4E6269320323BC700CA78CD /* StellarWatch WatchKit Extension */ = {
 			isa = PBXGroup;
 			children = (
-				F4E6269620323BC700CA78CD /* InterfaceController.swift */,
 				F4E6269820323BC700CA78CD /* ExtensionDelegate.swift */,
+				F4E6269620323BC700CA78CD /* InterfaceController.swift */,
 				F4E6269A20323BC700CA78CD /* NotificationController.swift */,
+				F4E626AD20323E7A00CA78CD /* Ticker.swift */,
 				F4E6269C20323BC700CA78CD /* Assets.xcassets */,
 				F4E6269E20323BC700CA78CD /* Info.plist */,
 				F4E6269420323BC700CA78CD /* Supporting Files */,
+				F4E626AC20323E7900CA78CD /* StellarWatch WatchKit App-Bridging-Header.h */,
 			);
 			path = "StellarWatch WatchKit Extension";
 			sourceTree = "<group>";
@@ -241,6 +249,7 @@
 					F4E6267F20323BC600CA78CD = {
 						CreatedOnToolsVersion = 8.3.2;
 						DevelopmentTeam = W7PMV9XFGM;
+						LastSwiftMigration = 0830;
 						ProvisioningStyle = Automatic;
 					};
 					F4E6268E20323BC700CA78CD = {
@@ -306,6 +315,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F4E6267420323BC600CA78CD /* ViewController.swift in Sources */,
+				F4E626AE20323E7A00CA78CD /* Ticker.swift in Sources */,
 				F4E6267220323BC600CA78CD /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -315,6 +325,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F4E6269B20323BC700CA78CD /* NotificationController.swift in Sources */,
+				F4E626AF20323E7A00CA78CD /* Ticker.swift in Sources */,
 				F4E6269920323BC700CA78CD /* ExtensionDelegate.swift in Sources */,
 				F4E6269720323BC700CA78CD /* InterfaceController.swift in Sources */,
 			);
@@ -495,13 +506,17 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = W7PMV9XFGM;
 				IBSC_MODULE = StellarWatch_WatchKit_Extension;
 				INFOPLIST_FILE = "StellarWatch WatchKit App/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Armonia.StellarWatch.watchkitapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "StellarWatch WatchKit Extension/StellarWatch WatchKit App-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = 4;
 				WATCHOS_DEPLOYMENT_TARGET = 3.2;
@@ -513,13 +528,16 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = W7PMV9XFGM;
 				IBSC_MODULE = StellarWatch_WatchKit_Extension;
 				INFOPLIST_FILE = "StellarWatch WatchKit App/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Armonia.StellarWatch.watchkitapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "StellarWatch WatchKit Extension/StellarWatch WatchKit App-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = 4;
 				WATCHOS_DEPLOYMENT_TARGET = 3.2;
@@ -571,6 +589,7 @@
 				F4E626A320323BC700CA78CD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F4E626A520323BC700CA78CD /* Build configuration list for PBXNativeTarget "StellarWatch WatchKit App" */ = {
 			isa = XCConfigurationList;
@@ -579,6 +598,7 @@
 				F4E626A720323BC700CA78CD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F4E626A920323BC700CA78CD /* Build configuration list for PBXNativeTarget "StellarWatch" */ = {
 			isa = XCConfigurationList;
@@ -587,6 +607,7 @@
 				F4E626AB20323BC700CA78CD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
