@@ -1,4 +1,4 @@
-# Stellar Watch
+# StellarWatch
 
 **StellarWatch** is an Apple Watch app to track the ticker price of Stellar Lumens wherever you go.
 
